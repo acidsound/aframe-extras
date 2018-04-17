@@ -208,7 +208,7 @@ THREE.LoaderUtils = {
 
             var image = parseImage(videoNodes[nodeID]);
 
-            blobs[videoNode.Filename] = image;
+            blobs[videoNode.RelativeFilename || videoNode.Filename] = image;
           }
         }
       }
