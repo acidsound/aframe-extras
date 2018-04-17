@@ -187,7 +187,7 @@ THREE.LoaderUtils = {
 
         var id = parseInt(nodeID);
 
-        images[id] = videoNode.Filename;
+        images[id] = videoNode.RelativeFilename || videoNode.Filename;
 
         // raw image data is in videoNode.Content
         if ('Content' in videoNode) {
